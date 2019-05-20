@@ -1,0 +1,33 @@
+{
+  "name": "react-ioc",
+  "version": "0.0.1",
+  "description": "> how about react in Ioc? :)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saber2pr/react-ioc.git"
+  },
+  "author": "saber2pr",
+  "license": "ISC",
+  "files": [
+    "lib/core/*",
+    "lib/index.*"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "dev": "rollup -c --watch"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.3",
+    "rollup": "^1.1.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "dependencies": {
+    "@saber2pr/ioc": "0.0.6",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
