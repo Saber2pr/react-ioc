@@ -27,7 +27,7 @@ class CountService {
 }
 
 @Injectable()
-export class Count extends React.Component {
+export class Count implements Component {
   @InjectProp() private CountService: CountService
 
   render() {
@@ -40,7 +40,7 @@ export class Count extends React.Component {
 }
 
 @Application
-export class App extends React.Component {
+export class App implements Component {
   @InjectProp() private Count: Count
 
   render() {

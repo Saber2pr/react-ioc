@@ -1,5 +1,11 @@
+/*
+ * @Author: saber2pr 
+ * @Date: 2019-05-20 11:20:49 
+ * @Last Modified by:   saber2pr 
+ * @Last Modified time: 2019-05-20 11:20:49 
+ */
 import React from 'react'
-import { Injectable, InjectProp, Application, System } from '..'
+import { Injectable, InjectProp, Application, System, Component } from '..'
 
 @Injectable()
 class CountService {
@@ -18,7 +24,7 @@ class CountService {
 }
 
 @Injectable()
-export class Count extends React.Component {
+export class Count implements Component {
   @InjectProp() private CountService: CountService
 
   render() {
@@ -31,7 +37,7 @@ export class Count extends React.Component {
 }
 
 @Application
-export class App extends React.Component {
+export class App implements Component {
   @InjectProp() private Count: Count
 
   render() {
